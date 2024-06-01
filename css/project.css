@@ -1,0 +1,67 @@
+.container {
+  padding: 20px;
+  margin: 20px;
+}
+center h4 {
+  color: #ff007b;
+  font: normal normal 600 24px/26px Cormorant SC;
+  font-weight: 100;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+#displayedImage {
+  object-fit: fill;
+}
+img {
+  width: 700px;
+  height: 550px;
+  border: 1px solid black;
+  margin: 15px 0;
+}
+#content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 90px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: rgb(233, 229, 229);
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+}
+button:hover {
+  background: #ff3147;
+  color: white;
+}
+#displayedImage {
+  margin-top: 25px;
+}
+
+#first > h1 {
+  font: normal normal medium 20px/80px Poppins;
+}
+#first > p {
+  font-size: 16px;
+  font: normal normal normal Poppins;
+}
+#second > h1 {
+  font: normal normal medium 20px/80px Poppins;
+}
+#second > p {
+  font-size: 16px;
+  font: normal normal normal Poppins;
+}
+#third > h1 {
+  font: normal normal medium 20px/80px Poppins;
+}
+#third > p {
+  font-size: 16px;
+  font: normal normal normal Poppins;
+}

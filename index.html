@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle Assignment</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Card.css" />
+
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <!-- contact us -->
+    <div class="contact-us">
+      <div class="sub-container">
+        <div class="content">
+          <h1>AWARD WINNING</h1>
+          <h2>DIGITAL MARKETING AGENCY</h2>
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ornare et purus. Morbi sed
+            lacus nec risus finibus feugiat et fermentum.
+          </p>
+          <button onclick="openPopup()" id="contact-us-btn">Contact Us</button>
+        </div>
+
+        <div class="image">
+          <img src="./assets/img.png" alt="Digital Marketing Agency" />
+        </div>
+      </div>
+    </div>
+
+    <!-- pop up form -->
+    <div id="popupForm" class="popup-form">
+      <div class="popup-content">
+        <span onclick="closePopup()" class="close-btn">&times;</span>
+        <h2>Talk to us</h2>
+        <form
+          action="https://getform.io/f/lajkwdkb"
+          method="POST"
+          id="contactForm"
+        >
+          <input
+            type="email"
+            placeholder="WorkEmail*"
+            id="workEmail"
+            name="workEmail"
+            required
+            value=""
+          />
+          <div class="flex">
+            <input
+              type="text"
+              placeholder="FirstName*"
+              id="firstName"
+              name="firstName"
+              required
+              value=""
+            />
+
+            <input
+              type="text"
+              placeholder="LastName*"
+              id="lastName"
+              name="lastName"
+              required
+              value=""
+            />
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required />
+            <label for="agreeTerms"
+              >I agree to Fyle's terms and conditions, and provide consent to
+              send me communication.</label
+            >
+          </div>
+
+          <button type="submit" class="submit-btn">Contact Us</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- what do we do -->
+    <div class="what-do-we-do">
+      <div class="main">
+        <div class="left">
+          <h1>what we do</h1>
+          <h2>
+            <strong
+              >SERVICES PROVIDE <br />
+              FOR YOU</strong
+            >
+          </h2>
+        </div>
+        <div class="right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            modi.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./assets/img1.jpg"
+                        alt="Avatar"
+                        style="width: 300px; height: 300px"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                          fill="none"
+                          d="M6.173,8.153l-2.711,2.193l2.357,1.417l0.001-0.001l0.474,0.287l1.077,0.647l1.731-1.315l0.873-0.668l0.003,0.003l0.003-0.003l0.015,0.011l0.008-0.011l2.073,1.543l0.595,0.438l3.868-2.351l-2.755-2.24l-3.802,2.409L6.173,8.153zM12.623,14.128l-0.009,0.01l-2.613-1.946l-2.507,1.92L7.47,14.147l-1.382-0.835v0.729l3.911,2.501l3.878-2.501v-0.68l-1.253,0.768L12.623,14.128z M13.786,8.104L13.786,8.104L13.786,8.104l-0.002-0.001L13.786,8.104z M3.458,6.046l2.722,2.103l3.802-2.406L7.371,3.458L3.458,6.046z M12.74,3.457L9.982,5.742l3.804,2.361l2.756-2.18L12.74,3.457z"
+                        ></path>
+                      </svg>
+                      <h2>Technology</h2>
+                      <p>
+                        Technology is the application of conceptual knowledge
+                        for achieving practical goals.
+                      </p>
+                      <a target="_blank" href="https://www.fylehq.com/">
+                        <button class="submit-btn btn">
+                          Read More
+                          <svg id="svg-icon" viewBox="0 0 20 20">
+                            <path
+                              fill="none"
+                              d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                        l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                        c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                        c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                        S1.293,9.212,1.729,9.212z"
+                            ></path>
+                          </svg></button
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./assets/img2.jpg"
+                        alt="Avatar"
+                        style="width: 300px; height: 300px"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <polygon
+                          fill="none"
+                          points="18.198,7.95 3.168,7.95 3.168,8.634 9.317,9.727 9.317,19.564 12.05,19.564 12.05,9.727 18.198,8.634 "
+                        ></polygon>
+                        <path
+                          fill="none"
+                          d="M2.485,10.057v-3.41H2.473l0.012-4.845h1.366c0.378,0,0.683-0.306,0.683-0.683c0-0.378-0.306-0.683-0.683-0.683H1.119c-0.378,0-0.683,0.306-0.683,0.683c0,0.378,0.306,0.683,0.683,0.683h0.683v4.845C1.406,6.788,1.119,7.163,1.119,7.609v2.733c0,0.566,0.459,1.025,1.025,1.025c0.053,0,0.105-0.008,0.157-0.016l-0.499,5.481l5.9,2.733h0.931C8.634,13.266,5.234,10.458,2.485,10.057z"
+                        ></path>
+                        <path
+                          fill="none"
+                          d="M18.169,6.584c-0.303-3.896-3.202-6.149-7.486-6.149c-4.282,0-7.183,2.252-7.484,6.149H18.169z M15.463,3.187c0.024,0.351-0.103,0.709-0.394,0.977c-0.535,0.495-1.405,0.495-1.94,0c-0.29-0.268-0.418-0.626-0.394-0.977C13.513,3.827,14.683,3.827,15.463,3.187z"
+                        ></path>
+                        <path
+                          fill="none"
+                          d="M18.887,10.056c-2.749,0.398-6.154,3.206-6.154,9.508h0.933l5.899-2.733L18.887,10.056z"
+                        ></path>
+                      </svg>
+                      <h2>Robot</h2>
+                      <p>
+                        A robot is a mechanical agent capable of carrying out a
+                        complex series of actions.
+                      </p>
+                      <a target="_blank" href="https://www.fylehq.com/">
+                        <button class="submit-btn btn">
+                          Read More
+                          <svg id="svg-icon" viewBox="0 0 20 20">
+                            <path
+                              fill="none"
+                              d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                      l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                      c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                      c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                      S1.293,9.212,1.729,9.212z"
+                            ></path>
+                          </svg></button
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./assets/img3.jpg"
+                        alt="Avatar"
+                        style="width: 300px; height: 300px"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M11.709,7.438H8.292c-0.234,0-0.427,0.192-0.427,0.427v8.542c0,0.234,0.192,0.427,0.427,0.427h3.417c0.233,0,0.426-0.192,0.426-0.427V7.865C12.135,7.63,11.942,7.438,11.709,7.438 M11.282,15.979H8.719V8.292h2.563V15.979zM6.156,11.709H2.74c-0.235,0-0.427,0.191-0.427,0.426v4.271c0,0.234,0.192,0.427,0.427,0.427h3.417c0.235,0,0.427-0.192,0.427-0.427v-4.271C6.583,11.9,6.391,11.709,6.156,11.709 M5.729,15.979H3.167v-3.416h2.562V15.979zM17.261,3.167h-3.417c-0.235,0-0.427,0.192-0.427,0.427v12.812c0,0.234,0.191,0.427,0.427,0.427h3.417c0.234,0,0.427-0.192,0.427-0.427V3.594C17.688,3.359,17.495,3.167,17.261,3.167 M16.833,15.979h-2.562V4.021h2.562V15.979z"
+                        ></path>
+                      </svg>
+                      <h2>Optical fiber</h2>
+                      <p>
+                        Optical fiber is a type of high-speed transmission
+                        medium used in telecommunications and networking to
+                        transmit data
+                      </p>
+                      <a target="_blank" href="https://www.fylehq.com/">
+                        <button class="submit-btn btn">
+                          Read More
+                          <svg id="svg-icon" viewBox="0 0 20 20">
+                            <path
+                              fill="none"
+                              d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                      l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                      c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                      c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                      S1.293,9.212,1.729,9.212z"
+                            ></path>
+                          </svg></button
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- our projects -->
+    <div class="container">
+      <center>
+        <h4>OUR PROJECT</h4>
+        <h1>WHY ARE WE BEST</h1>
+      </center>
+      <div class="main">
+        <div class="img">
+          <img id="displayedImage" src="./images/image6.jpg" alt="" />
+        </div>
+
+        <div id="content">
+          <button onclick="changeImage(1)">
+            <div id="first">
+              <h2>AI and the Future</h2>
+              <p>
+                The future of artificial intelligence (AI) holds immense promise
+                and potential. As technology continues to advance. lives
+              </p>
+            </div>
+          </button>
+
+          <button onclick="changeImage(2)">
+            <div id="second">
+              <h2>Better strategy and Quality</h2>
+              <p>
+                set to launch on the manufacture's new A330neo aircrsft in 2017.
+                It's about setting ambitious yet achievable goals and charting a
+                course to reach them, navigating challenges and seizing
+                opportunities along the way.
+              </p>
+            </div>
+          </button>
+
+          <button onclick="changeImage(3)">
+            <div id="third">
+              <h2>Technology</h2>
+              <p>
+                Technology is the cornerstone of modern society, shaping the way
+                we communicate, work, and live. From the invention of the wheel
+                to the era of artificial intelligence.
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- our company growth -->
+    <div id="container-card">
+      <center id="center">
+        <h2>Experts Growths</h2>
+
+        <h1>OUR COMAPANY GROWTH</h1>
+      </center>
+
+      <div id="flex-card">
+        <div id="card">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="39.297"
+              height="34.387"
+              viewBox="0 0 39.297 34.387"
+            >
+              <defs>
+                <style>
+                  .a {
+                    fill: #ff3147;
+                  }
+                </style>
+              </defs>
+              <path
+                class="a"
+                d="M18.776,36.02a1.226,1.226,0,0,0,1.749,0L36.235,20.1C42.787,13.466,38.131,2,28.814,2c-5.6,0-8.163,4.112-9.163,4.88C18.645,6.108,16.094,2,10.487,2,1.2,2-3.513,13.436,3.068,20.1Z"
+                transform="translate(0.001 -2)"
+              />
+            </svg>
+          </div>
+          <div class="text">
+            <h2>199 +</h2>
+            <p>Satisfied Customers</p>
+          </div>
+        </div>
+
+        <div id="card">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35.683"
+              height="35.683"
+              viewBox="0 0 35.683 35.683"
+            >
+              <defs>
+                <style>
+                  .a {
+                    fill: #ff3147;
+                  }
+                </style>
+              </defs>
+              <path
+                class="a"
+                d="M17.841,0A17.841,17.841,0,1,0,35.683,17.841,17.861,17.861,0,0,0,17.841,0Zm8.485,27.07a1.485,1.485,0,0,1-2.1,0L16.79,19.636a1.48,1.48,0,0,1-.436-1.051V8.921a1.487,1.487,0,1,1,2.973,0v9.049l7,7a1.485,1.485,0,0,1,0,2.1Zm0,0"
+              />
+            </svg>
+          </div>
+          <div class="text">
+            <h2>1591+</h2>
+            <p>Days of operation</p>
+          </div>
+        </div>
+
+        <div id="card">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35.378"
+              height="35.378"
+              viewBox="0 0 35.378 35.378"
+            >
+              <defs>
+                <style>
+                  .a {
+                    fill: #ff3147;
+                  }
+                </style>
+              </defs>
+              <path
+                class="a"
+                d="M23.11,23.918a4.821,4.821,0,0,1-6.822,0L9.454,17.084a4.824,4.824,0,1,1,6.822-6.822L19.7,13.684,29.15,4.233a17.6,17.6,0,1,0,5.435,8.209Zm0,0"
+                transform="translate(0 -0.004)"
+              />
+            </svg>
+          </div>
+          <div class="text">
+            <h2>283 +</h2>
+            <p>complete project</p>
+          </div>
+        </div>
+
+        <div id="card">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36.595"
+              height="30.019"
+              viewBox="0 0 36.595 30.019"
+            >
+              <defs>
+                <style>
+                  .a {
+                    fill: #ff3147;
+                  }
+                </style>
+              </defs>
+              <path
+                class="a"
+                d="M35.523,2.144H30.068c.009-.357.023-.709.023-1.072A1.071,1.071,0,0,0,29.018,0H7.576A1.071,1.071,0,0,0,6.5,1.072c0,.363.014.716.023,1.072H1.072A1.071,1.071,0,0,0,0,3.216V5.932A11.268,11.268,0,0,0,10.7,17.094a10.724,10.724,0,0,0,4.36,3.668,15.872,15.872,0,0,1-3.679,9.257H25.21a15.763,15.763,0,0,1-3.678-9.257,10.721,10.721,0,0,0,4.361-3.668,11.268,11.268,0,0,0,10.7-11.162V3.216A1.071,1.071,0,0,0,35.523,2.144ZM2.144,5.932V4.288h4.49A28.447,28.447,0,0,0,9.3,14.774,9.145,9.145,0,0,1,2.144,5.932Zm20.475,3.32-1.375,1.354.316,1.9a1.073,1.073,0,0,1-1.552,1.128L18.3,12.748l-1.712.889a1.073,1.073,0,0,1-1.552-1.128l.316-1.9L13.975,9.252a1.072,1.072,0,0,1,.594-1.824l1.908-.287.862-1.724a1.116,1.116,0,0,1,1.918,0l.862,1.724,1.908.287a1.072,1.072,0,0,1,.594,1.824Zm11.831-3.32a9.145,9.145,0,0,1-7.159,8.842A28.445,28.445,0,0,0,29.961,4.288h4.49Z"
+              />
+            </svg>
+          </div>
+          <div class="text">
+            <h2>75 +</h2>
+            <p>WinAwards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <script src="js/project.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/about.js"></script>
+</html>
